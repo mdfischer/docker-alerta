@@ -2,7 +2,7 @@
 
 while read plugin version; do
   echo "Installing '${plugin}' (${version})"
-  if [ plugin = 'plugins/slack' ]
+  if [ "$plugin" == "plugins/slack" ]
   then
     /venv/bin/pip install git+https://github.com/mdfischer/alerta-contrib.git@${version}#subdirectory=${plugin}
   else
