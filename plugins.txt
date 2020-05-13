@@ -18,7 +18,7 @@ plugins/prometheus master
 plugins/pubsub master
 plugins/pushover master
 plugins/rocketchat master
-plugins/slack master
+plugins/slack slack_severity_filter
 plugins/sns master
 plugins/syslog master
 plugins/telegram master
